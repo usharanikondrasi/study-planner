@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+<nav>
+  <h1>Study Planner Dashboard</h1>
+</nav>
+
+<div class="container grid">
+
+  <!-- Add Task Card -->
+  <div class="card">
+    <h3>Add Task</h3>
+
+    <input id="taskName" placeholder="Enter task name">
+    <input id="subject" placeholder="Enter subject">
+
+    <!-- Due Date -->
+    <input type="date" id="dueDate">
+
+    <!-- Priority (FIXED HERE) -->
+    <select id="priority">
+      <option value="" disabled selected>Select Priority</option>
+      <option value="High">🔥 High Priority (Urgent)</option>
+      <option value="Medium">⚡ Medium Priority</option>
+      <option value="Low">🌿 Low Priority (Flexible)</option>
+    </select>
+
+    <button class="btn" onclick="addTask()">Add Task</button>
+  </div>
+
+  <!-- Task Display -->
+  <div class="card">
+    <h3>Your Tasks</h3>
+    <div id="taskList"></div>
+  </div>
+
+</div>
+
+</body>
+</html>
